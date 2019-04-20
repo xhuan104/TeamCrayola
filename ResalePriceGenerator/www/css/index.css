@@ -1,0 +1,104 @@
+* {                         box-sizing: border-box;
+                            margin: 0;
+                            text-align: center;}
+
+body {                      background-color: #C5D5Cb;}
+
+#cameraPage {               text-align: center; }
+
+img {                       padding-top: 5vh;
+                            height: 35%;
+                            width: 35%;}
+
+
+#PricePage img{             height: 25%; 
+                            width: 25%;}
+
+#cameraPage button {        background-color: #c9af98;
+                            border: none;
+                            text-align: center;
+                            text-decoration: none;
+                            border-radius: 3vh;
+                            width: 20vh;
+                            height: 8vh;
+                            font-size: 2.5vh;}
+
+#PhotoOfClothing button {   
+                            border-radius: 2vh;
+                            width: 20vh;
+                            height: 8vh; 
+                            background-color: #c9af98;
+                            border: none;
+                            font-size: 2vh;
+
+}
+
+#PriceAnotherItemButton {
+                            border-radius: 2vh;
+                            width: 24vh;
+                            height: 7vh; 
+                            background-color: #c9af98;
+                            border: none;
+                            font-size: 2vh;
+                            float: right;
+                            margin-right: 5vh;
+                            margin-bottom: 3vh;
+
+}
+
+#CalculationTable {
+                            text-align: center;
+                            margin: auto;   
+                            font-size: 3vh; 
+                            font-weight: bold;
+                            padding: 1vh;
+
+
+}
+
+
+
+#ResalePriceTable {
+                            text-align: center;
+                            margin: auto;
+                            font-size: 3.5vh; 
+                            font-weight: bold;
+                            background-color: #b5cc9f;
+                            border: .2vh solid black;
+                            padding: 1vh;
+
+
+
+}
+    
+p {             
+                            font-size: 3vh;}
+
+
+h2{
+
+                            background-color: #b5cc9f;
+                            display: inline;
+                            border: .2vh solid black;
+                            padding: 1vh;
+                        }
+
+    
+
+
+
+#currentMarketPriceTable {
+                            
+                            text-align: center;
+                            background-color: #c9af98;
+                            font-size: 3vh; 
+                            padding: 2vh;
+                            border: .2vh solid black;
+                            margin: auto;
+
+}
+
+
+
+
+.header {                   background-color: #9FA8A3; }
