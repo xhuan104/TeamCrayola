@@ -28,12 +28,14 @@
 
             <p>Begin by taking a photo of your clothing item to get the most accurate resale price!</p>
     
-    <div class="app">
+            <div class="app">
             <img src="img\logo.png" alt="image" id="photo">
-           <button id = "cameraTakePicture" onclick="openCamera();">TAKE PICTURE</button>
-           <p id="msg"></p>
-    </div>
-         </div>
+            <br>
+            <button id = "cameraTakePicture" onclick="openCamera();">TAKE PICTURE</button>
+            <p id="msg"></p>
+            </div>
+
+        </div>
 
         <br> 
         <br>
@@ -42,23 +44,23 @@
         
 
         <!-- START OF SECOND DIV -->
-        <div id="PhotoOfClothing"> <div class="header"> <h1> Resale Price Generator </h1> </div>
+        <div id="PhotoOfClothing" style="visibility: visible;"> 
+          <div class="header"> 
+            <h1> Resale Price Generator </h1> 
+          </div>
 
-        <br><br>
+          <br><br>
 
         
-        <h2> &nbsp&nbsp&nbsp Price Check Complete! &nbsp&nbsp&nbsp</h2>
+          <h2> &nbsp&nbsp&nbsp Price Check Complete! &nbsp&nbsp&nbsp</h2>
 
-        <br>
-        
+          <br>
+          
 
-        <img src="img\logo.png"> <br><br>
+          <img src="img\logo.png"> <br><br>
 
-        <button type="button">Back</button>
-        <button type="button">Check My Price!</button>
-
-
-    
+          <button type="button">Back</button>
+          <button type="button">Check My Price!</button>
         </div>
 
         <br>
@@ -68,7 +70,7 @@
 
     <!-- START OF DIV NUMBER 3 -->
 
-        <div id="PricePage">
+        <div id="PricePage" style="visibility: visible;">
             <div class="header">
             <h1> Resale Price Generator </h1> </div>
 
@@ -92,8 +94,6 @@
             </table>
 
             <br>
-            
-
 
             <table id="CalculationTable">
                 <tr>
@@ -114,10 +114,8 @@
                     <td>$20.75</td>
                 </tr>
             </table>
-            <br>
-        <button type="button" id="PriceAnotherItemButton"> Price Another Item! </button>
-
-       
+          <br>
+          <button type="button" id="PriceAnotherItemButton"> Price Another Item! </button>
         </div>
 
 

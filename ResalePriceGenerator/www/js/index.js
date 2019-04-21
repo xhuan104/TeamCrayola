@@ -1,3 +1,4 @@
+"use strict";
 
 /*var app = {
     // Application Constructor
@@ -46,11 +47,12 @@ document.addEventListener('deviceready',app.init);
 app.init();
 */
 
-
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
     console.log(navigator.camera);
 }
+
+// document.getElementById("cameraTakePicture").addEventListener('click', openCamera);
 
 function setOptions(srcType) {
     var options = {
