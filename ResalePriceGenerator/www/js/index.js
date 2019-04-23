@@ -1,23 +1,10 @@
 "use strict";
 
-/*var app = {
-    // Application Constructor
-    initialize: function() {
-        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
-    },
 
-    
-    onDeviceReady: function() {
-        this.receivedEvent('deviceready');
-    }
-};
-*/
+var message; 
 
-/*
 let app = {
-  init: function (){
-    document.getElementById('cameraTakePicture').addEventListener('click', app.takephoto)
-  },
+
   takephoto: function(){
     let opts = {
       quality: 80,
@@ -29,67 +16,33 @@ let app = {
       targetWidth: 300,
       targetHeight: 400
     };
-    navigator.camera.getPicture(app.ftw, app.wtf, opts);
+    navigator.camera.getPicture(app.success, app.fail, opts);
+
     },
 
-  ftw: function(imgURI){
+  success: function(imgURI){
       document.getElementById('msg').textContent = imgURI; 
-      document.getElementById('photo').src = imgURI; 
+      document.getElementById('photo').src = imgURI;
+      document.getElementById('photo2').src = imgURI;
+      document.getElementById('photo3').src = imgURI;
+      document.getElementById('msg').style.visibility = "hidden";
+
   },
-  wtf: function(msg){
+  fail: function(msg){
     document.getElementById('msg').textContent = msg; 
   }
-}
+};
 
-document.addEventListener('deviceready',app.init);
-    
-
-app.init();
-*/
-
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-    console.log(navigator.camera);
-}
-
-// document.getElementById("cameraTakePicture").addEventListener('click', openCamera);
-
-function setOptions(srcType) {
-    var options = {
-        // Some common settings are 20, 50, and 100
-        quality: 50,
-        destinationType: Camera.DestinationType.FILE_URI,
-        // In this app, dynamically set the picture source, Camera or photo gallery
-        sourceType: srcType,
-        encodingType: Camera.EncodingType.JPEG,
-        mediaType: Camera.MediaType.PICTURE,
-        allowEdit: true,
-        correctOrientation: true  //Corrects Android orientation quirks
-    }
-    return options;
-}
+document.addEventListener('deviceready', app.init);
 
 
-function openCamera(selector) {
 
-    var srcType = Camera.PictureSourceType.CAMERA;
-    var options = setOptions(srcType);
-    var func = createNewFileEntry;
 
-    navigator.camera.getPicture(function cameraSuccess(imageUri) {
 
-        displayImage(imageUri);
-        // You may choose to copy the picture, save it somewhere, or upload.
-        func(imageUri);
 
-    }, function cameraError(error) {
-        console.debug("Unable to obtain picture: " + error, "app");
 
-    }, options);
-}
 
-function displayImage(imgUri) {
 
-    var elem = document.getElementById('imageFile');
-    elem.src = imgUri;
-}
+
+
+

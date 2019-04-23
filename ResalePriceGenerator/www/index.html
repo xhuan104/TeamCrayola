@@ -8,17 +8,24 @@
                    style-src   'self' 'unsafe-inline'; 
                    script-src  'self' 'unsafe-inline' 'unsafe-eval';">
 
+
         <meta name="format-detection" content="telephone=no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <!--<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"> -->
+        <meta name="viewport" 
+      content="width=device-width, user-scalable=no, 
+      initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
         <link rel="stylesheet" type="text/css" href="css/index.css">
         
 
 <title>Resale Price Generator</title>
     </head>
     <body>
+
     
     <!-- START OF FIRST DIV -->
         <div id="cameraPage">
+            <a name = "cameraPage"></a>
 
             <div class="header"> <br> 
                 <h1> Resale Price Generator </h1> 
@@ -28,23 +35,24 @@
 
             <p>Begin by taking a photo of your clothing item to get the most accurate resale price!</p>
     
-            <div class="app">
-            <img src="img\logo.png" alt="image" id="photo">
-            <br>
-            <button id = "cameraTakePicture" onclick="openCamera();">TAKE PICTURE</button>
+
+            <p><img src="img\black.png" alt="image" id="photo"></p>
+            
+                <br>
+
+           <p> <button id = "cameraTakePicture" onclick="app.takephoto()"><a href="#photoOfClothing">Take Photo!</a></button></p>
             <p id="msg"></p>
-            </div>
+
+
 
         </div>
 
-        <br> 
-        <br>
-        <br>
         <br>
         
 
         <!-- START OF SECOND DIV -->
-        <div id="PhotoOfClothing" style="visibility: visible;"> 
+        <div id="photoOfClothing">
+            <a name = "photoOfClothing"></a>
           <div class="header"> 
             <h1> Resale Price Generator </h1> 
           </div>
@@ -57,25 +65,25 @@
           <br>
           
 
-          <img src="img\logo.png"> <br><br>
+          <p> <img src="img\black.png" alt="image" id="photo2"></p> <br>
 
-          <button type="button">Back</button>
-          <button type="button">Check My Price!</button>
+          <button type="button"><a href="#cameraPage">Back</a></button>
+          <button type="button"><a href="#pricePage">Check My Price!</a></button>
         </div>
 
-        <br>
-        <br>
-        <br>
         <br>
 
     <!-- START OF DIV NUMBER 3 -->
 
-        <div id="PricePage" style="visibility: visible;">
-            <div class="header">
-            <h1> Resale Price Generator </h1> </div>
+        <div id="pricePage">
+            <a name = "pricePage"></a>
 
-            <img src="img\logo.png"> 
-                    <br><br>
+            <div class="header">
+            <h1> Resale Price Generator </h1> 
+            </div>
+
+           <p> <img src="img\black.png" alt="image" id="photo3"></p>
+                    <br>
 
             <table id="currentMarketPriceTable" >
               <th> &nbsp&nbsp&nbspCurrent Market Prices</th>
@@ -95,7 +103,7 @@
 
             <br>
 
-            <table id="CalculationTable">
+            <table id="calculationTable">
                 <tr>
                     <td>Average Market Price:</td>
                     <td>$27.67</td>
@@ -106,18 +114,22 @@
                 </tr>
             </table>
 
-            <br>
+          
 
-            <table id="ResalePriceTable">
+            <table id="resalePriceTable">
                 <tr>
                     <td> Resale Price </td>
                     <td>$20.75</td>
                 </tr>
             </table>
           <br>
-          <button type="button" id="PriceAnotherItemButton"> Price Another Item! </button>
+          <button type="button" id="priceAnotherItemButton"><a href="#cameraPage"> Price Another Item! </a>
+          </button>
+        
+
         </div>
 
+    
 
 
         <script type="text/javascript" src="cordova.js"></script>
