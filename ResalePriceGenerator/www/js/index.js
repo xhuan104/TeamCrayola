@@ -35,6 +35,10 @@ let app = {
 
 document.addEventListener('deviceready', app.init);
 
+function clearPhoto() {
+    document.getElementById('photo').src = "img/logo.png";
+}
+
 
 
 
