@@ -38,7 +38,7 @@ a {
 
 .step {
     min-height:      100vh;
-    width:           auto; }
+    min-width:       100vw; }
 
 #cameraPage { 
     text-align:         center; }
