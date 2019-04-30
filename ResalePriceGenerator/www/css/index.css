@@ -11,7 +11,7 @@ body {
     
 p { 
     font-size:          3vh;
-    padding: 2px 5px;
+    padding:            2px 5px;
 }
 
 h2 { 
@@ -26,19 +26,31 @@ img {
     width:              auto;}
 
 button {
-    padding:         0;
-    margin-top:      10vh;
-    /*bottom: 0;
-    margin-top: 5%;
-    margin-bottom: 10%;*/}
+    padding:            0;
+    margin-top:         10vh;
+    /*bottom:           0;
+    margin-top:         5%;
+    margin-bottom:      10%;*/}
 
 a { 
     text-decoration:    none;
     color:              black; }
 
+.header {
+    background-color: #9FA8A3;
+    font-size: 1.8vh;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+.headerLogo {
+    height:             30px;
+    width:              auto;
+    padding:            0;}
+
 .step {
-    min-height:      100vh;
-    min-width:       100vw; }
+    min-height:         100vh;
+    min-width:          100vw; }
 
 #cameraPage { 
     text-align:         center; }
@@ -79,17 +91,9 @@ a {
     border:             0.2vh solid black;
     margin:             auto; }
 
-
-.header {
-    background-color:   #9FA8A3;
-    font-size:          2vh;
-    padding-top:        1%;
-    padding-bottom:     1%;
-    font-family:        'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-#pricePage img{ 
-    height:             25%; 
-    width:              25%;}
+#photo3{ 
+    height:             35vh; 
+    width:              auto;}
 
 #cameraPage button { 
     background-color:   #c9af98;

@@ -2,40 +2,40 @@
 
 <html>
     <head>
-      <meta http-equiv="Content-Security-Policy" 
-      content="default-src 'self' gap: ws: data:; 
-      style-src   'self' 'unsafe-inline'; 
-      script-src  'self' 'unsafe-inline' 'unsafe-eval';">
+        <meta http-equiv="Content-Security-Policy" 
+        content="default-src 'self' gap: ws: data:; 
+        style-src   'self' 'unsafe-inline'; 
+        script-src  'self' 'unsafe-inline' 'unsafe-eval';">
 
-      <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="telephone=no">
         <!--<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"> -->
-      <meta name="viewport" 
-      content="width=device-width, user-scalable=no, 
-      initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" 
+        content="width=device-width, user-scalable=no, 
+        initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-      <link rel="stylesheet" type="text/css" href="css/index.css">
-      
-      <title>Resale Price Generator</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="icon" href="img\appLogo.png">
+        <title>Resale Price Generator</title>
     </head>
 
     <body>
     <!-- START OF FIRST DIV -->
         <div class="step" id="cameraPage">
-          <a name = "cameraPage"></a>
+            <a name = "cameraPage"></a>
 
-          <div class="header">
-              <h1> Resale Price Generator </h1> 
-          </div>
-          <br>
+            <div class="header">
+                <h1> Resale Price Generator&nbsp;<img src="img\appLogo.png" class="headerLogo" /> </h1> 
+            </div>
+            <br>
 
-          <p>Begin by taking a photo of your clothing item to get the most accurate resale price!</p>
-          <img src="img\logo.png" alt="image" id="photo">
-          <br><br>
+            <p>Begin by taking a photo of your clothing item to get the most accurate resale price!</p>
+            <img src="img\appLogo.png" alt="image" id="photo">
+            <br><br>
 
-          <button id = "cameraTakePicture" onclick="app.takephoto()">
-            <a href="#photoOfClothing">Take Photo!</a>
-          </button>
-          <p id="msg"></p>
+            <button id = "cameraTakePicture" onclick="app.takephoto()">
+                <a href="#photoOfClothing">Take Photo!</a>
+            </button>
+            <p id="msg"></p>
 
         </div>
         <br>
@@ -43,76 +43,76 @@
 
         <!-- START OF SECOND DIV -->
         <div class="step" id="photoOfClothing">
-          <a name = "photoOfClothing"></a>
-          <div class="header"> 
-            <h1> Resale Price Generator </h1> 
-          </div>
+            <a name = "photoOfClothing"></a>
+            <div class="header">
+                <h1> Resale Price Generator&nbsp;<img src="img\appLogo.png" class="headerLogo" /> </h1>
+            </div>
 
-          <br><br>
+            <br><br>
         
-          <h2> &nbsp&nbsp&nbsp Price Check Complete! &nbsp&nbsp&nbsp</h2>
+            <h2> &nbsp;&nbsp;&nbsp; Price Check Complete! &nbsp;&nbsp;&nbsp;</h2>
 
-          <br>
+            <br>
           
-          <img src="img\logo.png" alt="image" id="photo2">
-          <br>
+            <img src="img\appLogo.png" alt="image" id="photo2">
+            <br>
 
-          <button type="button" onclick="clearPhoto()"><a href="#cameraPage">Back</a></button>
-          <button type="button"><a href="#pricePage">Check My Price!</a></button>
+            <button type="button" onclick="clearPhoto()"><a href="#cameraPage">Back</a></button>
+            <button type="button"><a href="#pricePage">Check My Price!</a></button>
         </div>
         <br>
         <!-- END OF DIV NUMBER 2 -->
 
         <!-- START OF THIRD DIV -->
         <div class="step" id="pricePage">
-          <a name = "pricePage"></a>
 
-          <div class="header">
-          <h1> Resale Price Generator </h1> 
-          </div>
+            <a name = "pricePage"></a>
+            <div class="header">
+                <h1> Resale Price Generator&nbsp;<img src="img\appLogo.png" class="headerLogo" /> </h1>
+            </div>
 
-          <img src="img\black.png" alt="image" id="photo3">
-          <br>
+            <img src="img\appLogo.png" alt="image" id="photo3">
+            <br> <br />
 
-          <table id="currentMarketPriceTable" >
-            <th> &nbsp&nbsp&nbspCurrent Market Prices</th>
-              <tr>
-                  <td>Amazon's Price: </td>
-                  <td>$25.00</td>
-              </tr>
-              <tr>
-                <td>Macy's Price: </td>
-                <td>$30.00</td>
-              </tr>
-              <tr>
-                  <td>Dillard's Price</td>
-                  <td>$28.00</td>
-              </tr>
-          </table>
-          <br>
+            <table id="currentMarketPriceTable">
+                <th> &nbsp;&nbsp;&nbsp;Current Market Prices</th>
+                <tr>
+                    <td>Amazon's Price: </td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>Macy's Price: </td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td>Dillard's Price</td>
+                    <td>$28.00</td>
+                </tr>
+            </table>
+            <br>
 
-          <table id="calculationTable">
-            <tr>
-              <td>Average Market Price:</td>
-              <td>$27.67</td>
-            </tr>
-            <tr>
-              <td>Number of Times Worn:</td>
-              <td>14</td>
-            </tr>
-          </table>
+            <table id="calculationTable">
+                <tr>
+                    <td>Average Market Price:</td>
+                    <td>$27.67</td>
+                </tr>
+                <tr>
+                    <td>Number of Times Worn:</td>
+                    <td>14</td>
+                </tr>
+            </table>
 
-          <table id="resalePriceTable">
-            <tr>
-              <td> Resale Price </td>
-              <td>$20.75</td>
-            </tr>
-          </table>
-          <br>
+            <table id="resalePriceTable">
+                <tr>
+                    <td> Resale Price </td>
+                    <td>$20.75</td>
+                </tr>
+            </table>
+            <br>
 
-          <button type="button" id="priceAnotherItemButton" onclick="clearPhoto()">
-            <a href="#cameraPage"> Price Another Item! </a>
-          </button>
+            <button type="button" id="priceAnotherItemButton" onclick="clearPhoto()">
+                <a href="#cameraPage"> Price Another Item! </a>
+            </button>
 
         </div> 
         <!-- END OF DIV NUMBER 3 -->
