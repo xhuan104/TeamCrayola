@@ -81,6 +81,10 @@ let app = {
     }
 };
 
+function clearPhoto() {
+    document.getElementById('photo').src = "img/appLogo.png";
+};
+
 // only camera and API, no formula codes
 
 
