@@ -2,29 +2,30 @@
 
 <html>
     <head>
-        <meta http-equiv="Content-Security-Policy" 
-        content="default-src 'self' gap: ws: data:; 
-        style-src   'self' 'unsafe-inline'; 
-        script-src  'self' 'unsafe-inline' 'unsafe-eval';">
-
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' gap: ws: data:;
+            style-src   'self' 'unsafe-inline';
+            script-src  'self' 'unsafe-inline' 'unsafe-eval';">
         <meta name="format-detection" content="telephone=no">
-        <!--<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"> -->
-        <meta name="viewport" 
-        content="width=device-width, user-scalable=no, 
-        initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no,
+            initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <link rel="icon" href="img\appLogo.png">
+
         <title>Resale Price Generator</title>
     </head>
 
     <body>
-    <!-- START OF FIRST DIV -->
+        <!-- START OF FIRST DIV -->
         <div class="step" id="cameraPage">
-            <a name = "cameraPage"></a>
+            <a name="cameraPage"></a>
 
             <div class="header">
-                <h1> Resale Price Generator&nbsp;<img src="img\appLogo.png" class="headerLogo" /> </h1> 
+                <h1> Resale Price Generator&nbsp;<img src="img\appLogo.png" class="headerLogo" /> </h1>
             </div>
             <br>
 
@@ -32,7 +33,7 @@
             <img src="img\appLogo.png" alt="image" id="photo">
             <br><br>
 
-            <button id = "cameraTakePicture" onclick="app.takephoto()">
+            <button id="cameraTakePicture" onclick="app.takephoto()">
                 <a href="#photoOfClothing">Take Photo!</a>
             </button>
             <p id="msg"></p>
@@ -43,17 +44,17 @@
 
         <!-- START OF SECOND DIV -->
         <div class="step" id="photoOfClothing">
-            <a name = "photoOfClothing"></a>
+            <a name="photoOfClothing"></a>
             <div class="header">
                 <h1> Resale Price Generator&nbsp;<img src="img\appLogo.png" class="headerLogo" /> </h1>
             </div>
 
             <br><br>
-        
+
             <h2> &nbsp;&nbsp;&nbsp; Price Check Complete! &nbsp;&nbsp;&nbsp;</h2>
 
             <br>
-          
+
             <img src="img\appLogo.png" alt="image" id="photo2">
             <br>
 
@@ -65,8 +66,8 @@
 
         <!-- START OF THIRD DIV -->
         <div class="step" id="pricePage">
+            <a name="pricePage"></a>
 
-            <a name = "pricePage"></a>
             <div class="header">
                 <h1> Resale Price Generator&nbsp;<img src="img\appLogo.png" class="headerLogo" /> </h1>
             </div>
@@ -114,12 +115,12 @@
                 <a href="#cameraPage"> Price Another Item! </a>
             </button>
 
-        </div> 
+        </div>
         <!-- END OF DIV NUMBER 3 -->
 
-    
 
 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
