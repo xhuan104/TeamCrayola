@@ -24,15 +24,18 @@
         <div class="step" id="cameraPage">
             <a name="cameraPage"></a>
 
+            <!-- create header for each of the "pages": supply it with logo and app name -->
             <div class="header">
                 <h1> Resale Price Generator&nbsp;<img src="img\appLogo.png" class="headerLogo" /> </h1>
             </div>
             <br>
 
+            <!-- prompt user to take photo of their item -->
             <p>Begin by taking a photo of your clothing item to get the most accurate resale price!</p>
             <img src="img\appLogo.png" alt="image" id="photo">
             <br><br>
 
+            <!-- call app.takephoto() function to open the camera and allow user to take photo-->
             <button id="cameraTakePicture" onclick="app.takephoto()">
                 <a href="#photoOfClothing">Take Photo!</a>
             </button>
@@ -42,15 +45,18 @@
         <br>
         <!-- END OF DIV NUMBER 1 -->
 
-        <!-- START OF SECOND DIV -->
+        <!-- START OF SECOND DIV: price check processing page -->
         <div class="step" id="photoOfClothing">
             <a name="photoOfClothing"></a>
+
+            <!-- create header for each of the "pages": supply it with logo and app name -->
             <div class="header">
                 <h1> Resale Price Generator&nbsp;<img src="img\appLogo.png" class="headerLogo" /> </h1>
             </div>
 
             <br><br>
 
+            <!-- if price check is successful...--->
             <h2> &nbsp;&nbsp;&nbsp; Price Check Complete! &nbsp;&nbsp;&nbsp;</h2>
 
             <br>
@@ -58,26 +64,44 @@
             <img src="img\appLogo.png" alt="image" id="photo2">
             <br>
 
+            <!-- user can choose to price their item or go back to the camera page-->
             <button type="button" onclick="clearPhoto()"><a href="#cameraPage">Back</a></button>
-            <button type="button"><a href="#pricePage">Check My Price!</a></button>
+            <button type="button" onclick="checkPriceClick()"><a href="#pricePage">Check My Price!</a></button>
         </div>
         <br>
         <!-- END OF DIV NUMBER 2 -->
 
-        <!-- START OF THIRD DIV -->
+        <!-- START OF THIRD DIV: price check page -->
         <div class="step" id="pricePage">
             <a name="pricePage"></a>
 
+            <!-- create header for each of the "pages": supply it with logo and app name -->
             <div class="header">
                 <h1> Resale Price Generator&nbsp;<img src="img\appLogo.png" class="headerLogo" /> </h1>
             </div>
 
             <img src="img\appLogo.png" alt="image" id="photo3">
-            <br> <br />
 
+            <!-- <p id="itemCategory"></p> this would have been used if API worked properly -->
+            <!-- since api isnt working, we hardcoded the item category as shirt for our demo-->
+            <p>Item Category: Shirt</p>
+
+            <!-- current market price table: displays 3 departments item is sold at the 3 prices -->
             <table id="currentMarketPriceTable">
                 <th> &nbsp;&nbsp;&nbsp;Current Market Prices</th>
                 <tr>
+                    <td id="department1Name"></td>
+                    <td id="department1Price"></td>
+                </tr>
+                <tr>
+                    <td id="department2Name"></td>
+                    <td id="department2Price"></td>
+                </tr>
+                <tr>
+                    <td id="department3Name"></td>
+                    <td id="department3Price"></td>
+                </tr>
+                <!--<tr>
                     <td>Amazon's Price: </td>
                     <td>$25.00</td>
                 </tr>
@@ -88,29 +112,35 @@
                 <tr>
                     <td>Dillard's Price</td>
                     <td>$28.00</td>
-                </tr>
+                </tr>-->
             </table>
-            <br>
-
+            
+            <!-- calculation table: shows average market price and number of times worn item is worn --> 
             <table id="calculationTable">
                 <tr>
                     <td>Average Market Price:</td>
-                    <td>$27.67</td>
+                    <td id="averageMarketPrice"></td>
+                    <!--<td>$27.67</td>-->
                 </tr>
                 <tr>
-                    <td>Number of Times Worn:</td>
-                    <td>14</td>
+                    <td id="numberOfTimesWornLabel">Number Of Times Worn:</td>
+                    <td id="numberOfTimesWorn"></td>
+                    <!--<td>Number of Times Worn:</td>
+                    <td>14</td>-->
                 </tr>
             </table>
-
+            
+            <!-- resale price table: takes avg market price, times worn, and item cateogy into consideration when generating resale price -->
             <table id="resalePriceTable">
                 <tr>
                     <td> Resale Price </td>
-                    <td>$20.75</td>
+                    <td id="resalePrice"></td>
+                    <!--<td>$20.75</td>-->
                 </tr>
             </table>
             <br>
 
+            <!-- user can choose to price another item, will be brought back to camera page -->
             <button type="button" id="priceAnotherItemButton" onclick="clearPhoto()">
                 <a href="#cameraPage"> Price Another Item! </a>
             </button>
